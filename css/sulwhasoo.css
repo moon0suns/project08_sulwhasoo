@@ -1,0 +1,268 @@
+* {
+    /* outline: 1px solid #ddd; */
+}
+
+.tit h2 {
+    font-family: 'Marcellus', serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.tit p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#Header {
+    border-bottom: 1px solid #ddd;
+}
+
+
+#Header .inner {
+    position: relative;
+}
+
+
+#Header h1 {
+    line-height: 80px;
+    text-align: center;
+    /*💥 heigt햇을때 왜로고가 탑에 붙는지 -> 로고 세로 중앙배치 */
+}
+
+#Header h1 img {
+    width: 166px;
+}
+
+
+#Header .menu_top {
+    /*💥 커서 선택공간 넓히고 싶음 */
+    display: flex;
+}
+
+#Header .menu_top>ul {
+    display: flex;
+    font-size: 14px;
+    gap: 20px;
+}
+
+#Header .menu_top>ul>li>a {}
+
+#Header .open {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+#Header .menu_top .close {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+#Header .menu_top>ul>li {
+    position: relative;
+}
+
+#Header .menu_top>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #ddd;
+
+}
+
+#gnb>ul {
+    display: flex;
+    line-height: 50px;
+    font-size: 15px;
+    justify-content: center;
+    gap: 60px;
+    white-space: nowrap;
+}
+
+#gnb>ul>li {
+    position: relative;
+}
+
+#gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+
+
+#MainVisual {
+    position: relative;
+}
+
+#MainVisual .main_slide .mbg {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+#MainVisual .main_slide .mbg .slide-image {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+#MainVisual .main_slide .mbg01 .slide-image {
+    background: url(../images/main01.jpg)no-repeat center center/cover;
+}
+
+#MainVisual .main_slide .mbg02 .slide-image {
+
+    background: url(../images/main02.jpg)no-repeat center center/cover;
+}
+
+#MainVisual .main_slide .mbg03 .slide-image {
+    background: url(../images/main03.jpg)no-repeat center center/cover;
+}
+
+#MainVisual .main_slide .mbg04 .slide-image {
+    background: url(../images/main04.jpg)no-repeat center center/cover;
+}
+
+#MainVisual .main_slide .mbg05 .slide-image {
+    background: url(../images/main05.jpg)no-repeat center center/cover;
+}
+
+#MainVisual .main_slide .mbg06 .slide-image {
+    background: url(../images/main06.jpg)no-repeat center center/cover;
+}
+
+/* .swiper-wrapper {
+    transition-timing-function: cubic-bezier(0.17, 0.46, 1, 0.39);
+} */
+
+#MainVisual .slogan {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(102, 102, 102, .5);
+    text-align: left;
+}
+
+#MainVisual .slogan strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    margin: 0 0 10px 0;
+}
+
+#MainVisual .slogan h3 {
+    font-size: 35px;
+    font-weight: 700;
+
+
+}
+
+#MainVisual .mbg06 .slogan {
+    color: #444;
+    text-shadow: none;
+}
+
+
+/* 💥 재생아이콘 겹침 / 움직이는 바 색깔 바꾸기 */
+#MainVisual .scroll_wrap {
+    position: absolute;
+    z-index: 999;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+#MainVisual .sbar {
+    width: 450px;
+    height: 5px;
+    background: rgba(255, 255, 255, .3);
+
+}
+
+#MainVisual .sbar .span {
+    background: tomato;
+}
+
+#MainVisual .sbar button {}
+
+#MainVisual span i {
+    color: #ddd;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+#MainVisual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 998;
+    transform: translate(-50%, -50%);
+    max-width: 1800px;
+    width: 100%;
+
+}
+
+#MainVisual .arrows i {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+
+    font-size: 35px;
+    padding: 10px;
+    color: #00000054;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 10px 0 10px 0;
+
+    transition: .5s;
+}
+
+#MainVisual .arrows .left {
+    left: 15px;
+}
+
+#MainVisual:hover .arrows .left {
+    opacity: .8s;
+    transform: translate(60px, 0);
+}
+
+#MainVisual .arrows .right {
+    right: 15px;
+}
+
+#MainVisual:hover .arrows .right {
+    opacity: .8s;
+    transform: translate(-60px, 0);
+}
+
+#MainBest .pro_slide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
