@@ -4,217 +4,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sulwhasoo</title>
+    <title>주시회사 수우</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/aos.css">
-    <link rel="stylesheet" href="./css/sulwhasoo.css?ver=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/suwoo.css">
 
-    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/aos.js"></script>
-    <script src="./js/sulwhasoo.js?ver=1.0" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/suwoo.js"></script>
 </head>
 
 <body>
 
     <div class="wrapper">
-        <header id="Header">
-            <div class="inner">
-                <!-- 💥메뉴 탑 라인 위로 하는 방법 / 겹쳐도 되는지 -->
+        <header class="header">
+            <div class="inner header_wrap">
                 <h1>
-                    <a href=""><img src="./images/sulwhasoo_orange_logo.png" alt="설화수"></a>
+                    <a href="/"><img src="./images/logo.png" alt=""></a>
                 </h1>
-                <div class="menu_top">
-                    <ul class="open">
-                        <li><a href="">KOR</a></li>
-                        <li><a href="">ENG</a></li>
-                        <li><a href="">CHN</a></li>
+                <nav class="gnb">
+                    <ul class="main_menu">
+                        <li>
+                            <a href="">회사소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="./content.html">CEO 인사말</a></li>
+                                <li><a href="">회사개요</a></li>
+                                <li><a href="">연혁</a></li>
+                                <li><a href="">면허/인증/수상</a></li>
+                                <li><a href="">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">사업소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="">전기공사</a></li>
+                                <li><a href="">통신공사</a></li>
+                                <li><a href="">소방공사</a></li>
+                                <li><a href="">금속구조물 창호 공사</a></li>
+                                <li><a href="">신재생에너지·태양광</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">시공사례</a>
+                            <ul class="sub_menu">
+                                <li><a href="">주요실적</a></li>
+                                <li><a href="">포토갤러리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">제품소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="">나라장터 물품현황</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">커뮤니티</a>
+                            <ul class="sub_menu">
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">견적문의</a></li>
+                                <li><a href="">자료실</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <ul class="close">
-                        <li><a href="">매장찾기</a></li>
-                        <li><a href="">구매하기</a></li>
-                        <li><a href=""><i class="xi-search"></i></a></li>
-                    </ul>
-
-                </div>
-
-                <div class="menu_bottom">
-                    <nav id="gnb">
-                        <ul>
-                            <li><a href="">ABOUT 설화수</a></li>
-                            <li><a href="">윤조</a></li>
-                            <li><a href="">자음생</a></li>
-                            <li><a href="">베스트</a></li>
-                            <li><a href="">제품</a></li>
-                            <li><a href="">스파</a></li>
-                            <li><a href="">플래그십 스토어</a></li>
-                        </ul>
-                    </nav>
+                </nav>
+                <div class="side">
+                    <i class="xi-bars"></i>
                 </div>
             </div>
         </header>
 
-
-        <main id="Index">
-            <section id="MainVisual">
-                <h2 class="blind">메인비쥬얼 슬라이드</h2>
+        <main>
+            <section class="main_visual">
                 <div class="main_slide swiper">
                     <div class="swiper-wrapper">
-                        <div class="mbg mbg01 swiper-slide">
+                        <div class="swiper-slide mbg mbg01">
                             <div class="slide-image" data-swiper-parallax='45%'></div>
                             <div class="slogan">
-                                <strong>NEW BRAND FILM</strong>
-                                <h3>인삼, 아름다움 그리고 설화수</h3>
+                                <h2>
+                                    <span>Total Development</span>
+                                    <strong>성장과 행복을 추구하는 기업</strong>
+                                </h2>
                             </div>
                         </div>
-                        <div class="mbg mbg02 swiper-slide">
+                        <div class="swiper-slide mbg mbg02">
                             <div class="slide-image" data-swiper-parallax='45%'></div>
                             <div class="slogan">
-                                <strong>NEW BRAND FILM</strong>
-                                <h3>설화수, 그리고 TILDA</h3>
+                                <h2>
+                                    <span>Green Energy</span>
+                                    <strong>신재생에너지를 통해 지속 가능한 미래를 추구하는 기업</strong>
+                                </h2>
                             </div>
                         </div>
-                        <div class="mbg mbg03 swiper-slide">
+                        <div class="swiper-slide mbg mbg03">
                             <div class="slide-image" data-swiper-parallax='45%'></div>
-                            <div class="slogan">
-                                <strong>Sulwhasoo Flagship Store</strong>
-                                <h3>ROSÉ in BUKCHON</h3>
-                            </div>
-                        </div>
-                        <div class="mbg mbg04 swiper-slide">
-                            <div class="slide-image" data-swiper-parallax='45%'></div>
-                            <div class="slogan">
-                                <strong>Concentrated Ginseng Renewing Cream EX</strong>
-                                <h2>자음생크림</h2>
-                            </div>
-                        </div>
-                        <div class="mbg mbg05 swiper-slide">
-                            <div class="slide-image" data-swiper-parallax='45%'></div>
-                            <div class="slogan">
-                                <strong>SULWHASOO FIRST CARE ACTIVATING SERUM VI</strong>
-                                <h3>윤조에센스 6세대</h3>
-                            </div>
-                        </div>
-                        <div class="mbg mbg06 swiper-slide">
-                            <div class="slide-image" data-swiper-parallax='45%'></div>
-                            <div class="slogan">
-                                <strong>Amore mall (6.29-7.2)</strong>
-                                <h3>안티폴루션 선크림</h3>
+                            <div class="slogan03">
+                                <h2>
+                                    <span>Engineering & Construction</span>
+                                    <strong>전문적인 전기공사 시공</strong>
+                                </h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="inner scroll_wrap">
-                    <div class="sbar"></div>
-                    <button>
-                        <span><i class="xi-pause pause"></i></span>
-                        <!-- <span><i class="xi-xi-play"></i></span> -->
-                    </button>
-                </div>
                 <div class="arrows">
-                    <i class="xi-angle-left-min left"></i>
-                    <i class="xi-angle-right-min right"></i>
+                    <span class="left"><i class="xi-angle-right-thin right"></i></span>
+                    <span class="right"><i class="xi-angle-left-thin left"></i></span>
+                </div>
+                <div class="dots">
+                    <li><span>01</span></li>
+                    <li><span>02</span></li>
+                    <li><span>03</span></li>
+                </div>
+                <div class="scroll_down">
+                    <div class="txt_s">scroll down</div>
+                    <div class="bar">
+                        <span></span>
+                    </div>
                 </div>
             </section>
 
-            <section id="MainBest" class="section">
-                <h2 class="blind">베스트 셀러 제품</h2>
-                <div class="inner">
-                    <div class="tit">
-                        <h2>BEST SELLER</h2>
-                        <p>설화수에서 가장 사랑받는 베스트 셀러 제품을 소개합니다.</p>
+            <section class="main_content sec">
+                <div class="tit">
+                    <h2>OVERVIEW</h2>
+                    <h3>사업분야</h3>
+                    <span>“성장과 행복을 추구하는 기업 주식회사 수우”</span>
+                    <p>수우기업은 환경과 에너지 사업을 선도하며, 더 나은 미래를 약속합니다.</p>
+                </div>
+
+                <div class="inner con">
+                    <div class="itm itm01">
+                        <div class="img_box">
+                            <img src="./images/con01.jpg" alt="">
+                        </div>
+                        <div class="con_txt">
+                            <strong>ELECTRIC WORK</strong>
+                            <h2>전기공사</h2>
+                            <p>발전·송전·변전·배전·전기공급 또는 전기사용을 위하여 기계·기구 등 설비를 설치하고 있습니다.</p>
+                        </div>
                     </div>
-                    <div class="swiper pro_slide">
-                        <div class="swiper-wrapper">
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/product01.jpg" alt="">
-                                    </div>
-                                </figure>
-                                <figcaption>
-                                    <h3>자음생크림</h3>
-                                    <strong>Concentrated Ginseng Renewing Cream EX</strong>
-                                    <span>270,000원</span>
-                                </figcaption>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/product02.jpg" alt="">
-                                    </div>
-                                </figure>
-                                <figcaption>
-                                    <h3>자음생세럼</h3>
-                                    <strong>Concentrated Ginseng Renewing Serum EX</strong>
-                                    <span>145,000원</span>
-                                </figcaption>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/product03.jpg" alt="">
-                                    </div>
-                                </figure>
-                                <figcaption>
-                                    <h3>순행클렌징오일</h3>
-                                    <strong>Gentle Cleansing Oil</strong>
-                                    <span>75,000원</span>
-                                </figcaption>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/product04.jpg" alt="">
-                                    </div>
-                                </figure>
-                                <figcaption>
-                                    <h3>순행클렌징폼</h3>
-                                    <strong>Gentle Cleansing Foam</strong>
-                                    <span>67,000원</span>
-                                </figcaption>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/product05.jpg" alt="">
-                                    </div>
-                                </figure>
-                                <figcaption>
-                                    <h3>백삼팩</h3>
-                                    <strong>White Ginseng Radiance Refining Mask</strong>
-                                    <span>72,000원</span>
-                                </figcaption>
-                            </div>
-                            <div class="itm swiper-slide">
-                                <figure>
-                                    <div class="img_box">
-                                        <img src="./images/product06.jpg" alt="">
-                                    </div>
-                                </figure>
-                                <figcaption>
-                                    <h3>윤조에센스 6세대</h3>
-                                    <strong>First Care Activating Serum VI</strong>
-                                    <span>140,000원</span>
-                                </figcaption>
-                            </div>
+                    <div class="itm itm02">
+                        <div class="img_box">
+                            <img src="./images/con02.jpg" alt="">
+                        </div>
+                        <div class="con_txt">
+                            <strong>COMMUNICATION</strong>
+                            <h2>통신공사</h2>
+                            <p>통신시설의 설치·유지·보수·운용·전기통신에 대한 영업과 연구 및 실용화 시설에 대한 업무를 하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="itm itm03">
+                        <div class="img_box">
+                            <img src="./images/con03.jpg" alt="">
+                        </div>
+                        <div class="con_txt">
+                            <strong>FIRE BRIGADE</strong>
+                            <h2>소방공사</h2>
+                            <p>소방시설을 설계에 따라 신설·증설·개설·이전·보수를 화재안전기준에 적합토록 설치하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="itm itm04">
+                        <div class="img_box">
+                            <img src="./images/con04.jpg" alt="">
+                        </div>
+                        <div class="con_txt">
+                            <strong>Green Energy</strong>
+                            <h2>신재생에너지</h2>
+                            <p>태양전지를 부착한 패널을 이용하여 전기를 대규모로 생산하는 반영구적 활용할 수 있는 발전시스템입니다.</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section class="main_product sec">
+                <div class="inner">
+                    <div class="left">
+                        <div class="tit">
+                            <h2>BUSINESS</h2>
+                            <h3>주요실적</h3>
+                            <strong>자연과 사람을 위한 환경, <span>에너지 기술기업</span></strong>
+                            <p>주식회사 수우는 풍부한 지식과 시공경험을 바탕으로 고객의 신뢰와 만족을 위해 끊임없이
+                                연구, 개발, 도전합니다. 전기·통신·소방 분야와 태양광발전장치 및 신재생에너지사업을 제공하는 전문기업입니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+
+                                <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                    data-aos-once="false">
+                                    <figure>
+                                        <img src="./images/pro01.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>부산명지 문화복합시설</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                    data-aos-once="false">
+                                    <figure>
+                                        <img src="./images/pro02.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>부산오페라하우스</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                    data-aos-once="false">
+                                    <figure>
+                                        <img src="./images/pro03.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>쌍용 더 플래티넘 해운대</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                    data-aos-once="false">
+                                    <figure>
+                                        <img src="./images/pro04.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>남원 수창해뜨레 아파트</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+                                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                                    data-aos-once="false">
+                                    <figure>
+                                        <img src="./images/pro05.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>용인 근린생활시설</h3>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
 
 
-        <footer id="Footer" class="section">
 
+        <footer class="footer">
+            <div class="ft">
+                <div class="inner f_con">
+                    <ul class="ft_l">
+                        <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">견적문의</a></li>
+                    </ul>
+                    <ul class="ft_r">
+                        <li>고객센터</li>
+                        <li><a href="tel: 051-504-3558" class="tel"> 051-504-3558</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fb">
+                <div class="inner f_con">
+                    <div class="fb_l">
+                        <address><span>주소 :</span> 부산시 동래구 쇠미로217번길 22</address>
+                        <ul>
+                            <li><span>FAX :</span> 051.504.0456</li>
+                            <li><span>EMAIL :</span> suwoo504@naver.com</li>
+                        </ul>
+                        <div class="copy">
+                            &copy;SUWOO CORPORATION. All Rights Reserved
+                        </div>
+                    </div>
+                    <div class="f_box">
+                        <img src="./images/footer.logo00.png" alt="">
+                    </div>
+                </div>
+            </div>
         </footer>
-    </div>
 
-
-
-
+        <div class="to_top">
+            <i class="xi-angle-up-thin"></i>
+        </div>
     </div>
 </body>
 
