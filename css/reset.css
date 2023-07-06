@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+
+/* <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> */
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Serif KR', serif;
+font-family: 'Roboto', sans-serif; */
+/* font-family: 'Marcellus',serif; */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
     font-size: inherit;
     font-weight: inherit;
-}
-
-*::before,
-*::after {
     box-sizing: border-box;
+    color: inherit;
+    font-style: normal;
 }
 
 ul,
@@ -20,28 +27,31 @@ li {
 
 a {
     text-decoration: none;
-    color: inherit;
 }
+
+button {
+    all: unset;
+}
+
+
 
 img {
     vertical-align: middle;
-    /* 아래위 간격생기기 */
     max-width: 100%;
-    /* 이미지를 박스안에 가둠 */
-}
-
-p {
-    word-break: keep-all;
-    /* 자연스럽게 음절마다 떨어지게 */
 }
 
 body {
     line-height: 1;
-    /* 폰트사이즈만큼 박스사이즈 차지하게 */
-    color: #444;
+
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
-em,
-address {
-    font-style: normal;
+/* 시각장애인을 위한 대체 텍스트 */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
