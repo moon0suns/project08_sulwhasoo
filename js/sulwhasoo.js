@@ -66,7 +66,7 @@ const bestSlide2 = new Swiper('.best_r_slide', {
 
 
     breakpoints: {
-        540: {
+        768: {
             slidesPerView: 1,
         },
 
@@ -101,7 +101,7 @@ const proSlide = new Swiper('.pro_slide', {
 
     // 반응형갔을때
     breakpoints: {
-        540: {
+        768: {
             slidesPerView: 3,
         },
 
