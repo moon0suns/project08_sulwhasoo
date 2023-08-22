@@ -219,6 +219,7 @@ AOS.init();
 // 반응형 모바일 메뉴바 버튼 나오게 하기
 $('.mobile_btn').on('click', function () {
     $('.gnb').toggleClass('on');
+    $(this).toggleClass('on');
     $('#Header').toggleClass('oo');
 });
 
