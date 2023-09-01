@@ -331,18 +331,10 @@
 
 
     #Header .mobile_btn {
-        position: fixed;
-        top: 30px;
-        right: 30px;
-        display: block;
-    }
-
-
-    #Header .mobile_btn {
         display: block;
 
         position: fixed;
-        inset: 30px 30px auto auto;
+        inset: 25px 15px auto auto;
         z-index: 1000;
         width: 30px;
         height: 30px;
@@ -562,6 +554,10 @@
 
     #MainVisual {}
 
+    #MainVisual .main_slide .mbg {
+        height: 750px;
+    }
+
     #MainVisual .main_slide .mbg01 .slide-image {
         background: url(../images/main01.jpg)no-repeat center center/cover;
     }
@@ -594,11 +590,12 @@
     }
 
     #MainVisual .slogan strong {
-        font-size: 18px;
+        font-size: 14px;
+        margin-bottom: 10px;
     }
 
     #MainVisual .slogan h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
 
@@ -626,7 +623,7 @@
 
     #MainVisual .arrows i {
         font-size: 18px;
-        padding: 12px;
+        padding: 10px;
     }
 
 
@@ -727,7 +724,7 @@
     transform: translate(0, -50%);
     max-width: 1568px;
     width: 100%;
-    z-index: 999;
+    z-index: 998;
 }
 
 #MainBest .arrows i {
@@ -832,7 +829,7 @@
     max-width: 1200px;
     width: 100%;
 
-    z-index: 999;
+    z-index: 998;
 
 }
 
