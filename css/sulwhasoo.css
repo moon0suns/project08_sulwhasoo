@@ -190,7 +190,7 @@
 
 
 
-@media (max-width:768px) {
+@media (max-width:540px) {
 
     html {
         font-size: 1px;
@@ -548,7 +548,7 @@
     color: rgba(255, 255, 255, .8)
 }
 
-@media (max-width :768px) {
+@media (max-width :540px) {
 
     #MainVisual {}
 
@@ -756,7 +756,7 @@
 
 
 
-@media (max-width :768px) {
+@media (max-width :540px) {
 
     #MainBest {}
 
@@ -901,7 +901,7 @@
 }
 
 
-@media (max-width :768px) {
+@media (max-width :540px) {
 
     #MainProduct .arrows {
         position: absolute;
@@ -1046,7 +1046,7 @@
 }
 
 
-@media (max-width :768px) {
+@media (max-width :540px) {
     #MainHanok .h_content {
         display: flex;
         flex-direction: column;
@@ -1151,7 +1151,7 @@
 
 
 
-@media (max-width :768px) {
+@media (max-width :540px) {
     #MainHanok .tab {
         display: none;
     }
@@ -1567,7 +1567,7 @@
     font-weight: 500;
 }
 
-@media (max-width :768px) {
+@media (max-width :540px) {
 
 
     #MainCreat {
@@ -1744,7 +1744,7 @@
     font-size: 14px;
 }
 
-@media (max-width :768px) {
+@media (max-width :540px) {
 
     #Footer {
         background: #2b1e16e0;
@@ -1856,7 +1856,7 @@
     color: var(--mc);
 }
 
-@media (max-width :768px) {
+@media (max-width :540px) {
     .to_top {
         right: 20px;
     }
